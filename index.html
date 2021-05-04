@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <title>RD GameStudio</title>
+
+        <meta charset="utf-8">
+        <meta name="RD-GameStudio" content="">
+        <meta name="description" content="Board Game" />
+        <meta name="keywords" content="BoardGame, Residenz Donnersberg" />
+        <meta name="author" content="Lukas Weier, Miles Lenz" />
+        <meta name="robots" content="no-index" />
+        <!--disable zoom on double tap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/all_streets.css">
+
+        <!-- Icon -->
+        <link href="assets/img/favicon.ico" rel="icon" type="image/ico" />
+    </head>
+    <body>
+        <main id="home">
+            <div class="Logo">
+                <img id="RDLogo" src="assets/img/RDLogo_2.png" alt="RD Logo" onclick="startDisplay()">
+            </div>
+    
+            <div class="Konto">
+                <p>Kontostand</p>
+                <p id="count"></p>
+            </div>
+    
+            <div class="Rechner">
+                <div class="RechnerOben">
+                    <img class="Button" src="assets/img/minus.png" onclick="minus()">
+                    <div class="Bieranzeige">
+                        <h2>1</h2>
+                        <img class="Bier" src="assets/img/schlappeseppel.png">
+                    </div>
+                    <img class="Button" src="assets/img/plus.png" onclick="plus()">
+                </div>
+    
+                <div class="RechnerUnten">
+                    <img class="Button" src="assets/img/minus.png" onclick="minusx()">
+                    <div class="Bieranzeige">
+                        <h2>5</h2>
+                        <img class="Bier" src="assets/img/schlappeseppel.png">
+                    </div>
+                    <img class="Button" src="assets/img/plus.png" onclick="plusx()">
+                </div>
+    
+            </div>
+        </main>
+        <main id="all_streets">
+            <h1>Shopping Time</h1>
+            <div id="all_streets_list">
+                <div id="all_cards_brown">
+                    <img src="assets/img/Streets/1.PNG">
+                    <img src="assets/img/Streets/2.PNG">
+                </div>
+                <div id="all_cards_cyan">
+                    <img src="assets/img/Streets/3.PNG">
+                    <img src="assets/img/Streets/4.PNG">
+                    <img src="assets/img/Streets/5.PNG">
+                </div>
+                <div id="all_cards_pink">
+                    <img src="assets/img/Streets/6.PNG">
+                    <img src="assets/img/Streets/7.PNG">
+                    <img src="assets/img/Streets/8.PNG">
+                </div>
+                <div id="all_cards_orange">
+                    <img src="assets/img/Streets/9.PNG">
+                    <img src="assets/img/Streets/10.PNG">
+                    <img src="assets/img/Streets/11.PNG">
+                </div>
+                <div id="all_cards_red">
+                    <img src="assets/img/Streets/12.PNG">
+                    <img src="assets/img/Streets/13.PNG">
+                    <img src="assets/img/Streets/14.PNG">
+                </div>
+                <div id="all_cards_yellow">
+                    <img src="assets/img/Streets/15.PNG">
+                    <img src="assets/img/Streets/16.PNG">
+                    <img src="assets/img/Streets/17.PNG">
+                </div>
+                <div id="all_cards_green">
+                    <img src="assets/img/Streets/18.PNG">
+                    <img src="assets/img/Streets/19.PNG">
+                    <img src="assets/img/Streets/20.PNG">
+                </div>
+                <div id="all_cards_blue">
+                    <img src="assets/img/Streets/21.PNG">
+                    <img src="assets/img/Streets/22.PNG">
+                </div>
+                <div id="all_cards_power">
+                    
+                </div>
+                <div id="all_cards_station">
+                    
+                </div>
+            </div>
+        </main>
+        <main id="my_streets">
+            <h1>My Streets</h1>
+        </main>
+        <main id="showCard">
+            <h2>Diese Straße kaufen?</h2>
+            <img id="bigCard">
+            <div id="buttons">
+                <button>Ja</button>
+                <button onclick="changeWindow('all_streets')">Nein</button>
+            </div>
+        </main>
+        <footer>
+            <img onclick="changeWindow('all_streets')" src="assets/img/Streets.png">
+            <img onclick="changeWindow('home')" src="assets/img/RD-Backside_Hex_Logo_R.png">
+            <img onclick="changeWindow('my_streets')" src="assets/img/MyHouses.png">
+        </footer>
+
+        <script src="assets/scripts/script.js"></script>
+    </body>
+</html>

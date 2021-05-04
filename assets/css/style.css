@@ -1,0 +1,100 @@
+/* FONTS */
+@font-face {
+    font-family: akira;
+    src: url(../fonts/akira.ttf);
+}
+
+
+/* GLOBALS */
+p, h2, h1, button {
+    font-family: akira;
+}
+
+body {
+    margin-bottom: 80px;
+}
+
+
+/* MAIN - Home */
+#my_streets, #all_streets, #showCard{
+    display: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+}
+
+.Logo, .Konto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Rechner{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.RechnerOben, .RechnerUnten{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Bieranzeige{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button{
+    margin: 5%;
+    height: auto;
+    width: 15%;
+}
+
+.Bier{
+    margin: 5%;
+    height: auto;
+    width: 13%;
+}
+
+#RDLogo{
+    width: 50%;
+    max-width: 1300px;
+}
+
+#count{
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -1px 10px #222;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+}
